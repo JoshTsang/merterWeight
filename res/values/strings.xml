@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">merterweight</string>
+    <string name="hello_world">Hello world!</string>
+	<string name="menu_alert">报警管理</string>
+	<string name="menu_produce">生产页面</string>
+	<string name="menu_arg">参数设置</string>
+	<string name="menu_user">用户管理</string>
+	<string name="menu_log">操作日志</string>
+	<string name="menu_camara">实时影像</string>
+	<string name="menu_machine">挤出/牵引机显示</string>
+	<string-array name="permissions">
+	    <item >浏览权限</item>
+	    <item >操作权限</item>
+	    <item >管理权限</item>
+	    <item >超级用户</item>
+	</string-array>
+</resources>

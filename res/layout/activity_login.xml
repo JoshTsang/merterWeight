@@ -1,0 +1,126 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login" 
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:background="@drawable/bg">
+	<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_weight="15"
+    android:layout_height="0dp"
+    android:orientation="horizontal" >
+    <LinearLayout 
+    android:layout_weight="3"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:paddingLeft="20dp"
+    android:gravity="center_vertical"
+    android:background="@drawable/logo"
+    android:orientation="horizontal">
+        
+    </LinearLayout>
+	<LinearLayout 
+    android:layout_weight="3"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="horizontal">
+	   <TextView android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       android:textSize="55dp"
+	       android:text="登  陆"/> 
+	</LinearLayout>
+	<LinearLayout 
+    android:layout_weight="3"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+	     <TextView android:id="@+id/date"
+	        android:layout_weight="1"
+		    android:layout_width="match_parent"
+		    android:layout_height="0dp"
+		    android:textSize="30sp"
+		    android:gravity="center"/>
+	    <DigitalClock 
+	        android:layout_weight="1"
+		    android:layout_width="match_parent"
+		    android:layout_height="0dp"
+		    android:textSize="30sp"
+		    android:gravity="center"/>
+	</LinearLayout>
+	
+</LinearLayout>
+
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="2px"
+	    android:background="#000000">
+	</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="80"
+    	android:gravity="center_horizontal"
+    	android:orientation="vertical">
+		<LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    	android:gravity="center_horizontal"
+    	android:orientation="vertical"
+    	android:layout_marginTop="40dp"
+    	android:padding="40dp"
+    	android:background="@drawable/login_frame">
+	    	<LinearLayout 
+		        android:layout_width="wrap_content"
+		        android:layout_height="0dp"
+		        android:layout_weight="10"
+		    	android:gravity="center"
+		    	android:orientation="horizontal">
+		    	<TextView android:layout_width="wrap_content"
+		    	    android:layout_height="wrap_content"
+		    	    android:textSize="45sp"
+		    	    android:text="输入登陆等级"/>
+	    	    <EditText android:id="@+id/name"
+	            android:layout_width="200dp"
+	    		android:layout_height="wrap_content"/>
+	    	</LinearLayout>
+	        
+	        <LinearLayout 
+		        android:layout_width="wrap_content"
+		        android:layout_height="0dp"
+		        android:layout_weight="10"
+		    	android:gravity="center"
+		    	android:orientation="horizontal">
+		    	<TextView android:layout_width="wrap_content"
+		    	    android:layout_height="wrap_content"
+		    	    android:textSize="45sp"
+		    	    android:text="输入登陆密码"/>
+	    	    <EditText android:id="@+id/pwd"
+	            android:layout_width="200dp"
+	    		android:layout_height="wrap_content"
+	    		android:inputType="textPassword"/>
+	    	</LinearLayout>
+	        
+	        
+        </LinearLayout>
+        <LinearLayout android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	    	android:gravity="center_horizontal"
+	    	android:orientation="horizontal"
+	    	android:layout_marginTop="30dp">
+            <Button android:id="@+id/loginBtn"
+	            android:layout_width="wrap_content"
+	    		android:layout_height="wrap_content"
+	    		android:layout_marginRight="60dp"
+	    		android:background="@drawable/login"/>
+            <Button android:id="@+id/loginReset"
+	            android:layout_width="wrap_content"
+	    		android:layout_height="wrap_content"
+	    		android:layout_marginLeft="60dp"
+                android:background="@drawable/login_reset"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

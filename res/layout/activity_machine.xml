@@ -1,0 +1,197 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login" 
+    android:orientation="vertical"
+    android:background="@drawable/bg">
+	<include layout="@layout/action_bar"/>
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="2px"
+	    android:background="#000000">
+	</LinearLayout>
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="80"
+	    android:orientation="vertical"
+	    android:padding="20dp"
+	    android:gravity="center">
+	    <LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="20"
+	    android:orientation="horizontal"
+	    android:paddingLeft="60dp"
+	    android:paddingRight="60dp"
+	    android:gravity="center">
+	    	<LinearLayout
+			    android:layout_width="0dp"
+			    android:layout_height="match_parent"
+			    android:layout_weight="20"
+			    android:orientation="vertical"
+			    android:gravity="center_horizontal">
+			    <TextView 
+			        android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:textSize="40sp"
+				    android:text="挤出率"/>
+			    <TextView 
+			        android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_marginBottom="10dp"
+				    android:textSize="30sp"
+				    android:text="(g/rev)"/>
+			    <TextView  android:id="@+id/wgtPerRev" 
+			        android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:textSize="40sp"/>
+			 </LinearLayout>
+			 <LinearLayout
+			    android:layout_width="0dp"
+			    android:layout_height="match_parent"
+			    android:layout_weight="20"
+			    android:orientation="vertical"
+			    android:gravity="center_horizontal">
+			    <TextView 
+			        android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:textSize="40sp"
+				    android:text="挤出机速度"/>
+			    <TextView 
+			        android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_marginBottom="10dp"
+				    android:textSize="30sp"
+				    android:text="(rpm)"/>
+			    <TextView android:id="@+id/speedPerMin" 
+			        android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:textSize="40sp"/>
+			 </LinearLayout>
+		    <LinearLayout
+		    android:layout_width="0dp"
+		    android:layout_height="match_parent"
+		    android:layout_weight="20"
+		    android:orientation="vertical"
+		    android:gravity="center_horizontal">
+			    <TextView 
+			        android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:textSize="40sp"
+				    android:text="牵引机速度"/>
+			    <TextView 
+			        android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_marginBottom="10dp"
+				    android:textSize="30sp"
+				    android:text="(m/min)"/>
+			    <TextView  android:id="@+id/meterPerMin" 
+			        android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:textSize="40sp"/>
+			 </LinearLayout>
+		</LinearLayout>
+		
+	    <LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="35"
+	    android:orientation="horizontal"
+	    android:paddingLeft="80dp"
+	    android:paddingRight="80dp"
+	    android:gravity="center">
+		    <LinearLayout
+		    android:layout_width="0dp"
+		    android:layout_height="match_parent"
+		    android:layout_weight="20"
+		    android:orientation="vertical"
+		    android:gravity="center_horizontal">
+		        <TextView 
+			        android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_marginBottom="15dp"
+				    android:textSize="30sp"
+				    android:text="挤出机(MV)"/>
+		        <FrameLayout android:layout_width="272px"
+		            android:layout_height="300px">
+		        	<LinearLayout android:layout_width="match_parent"
+		            android:layout_height="match_parent"
+		            android:layout_margin="30px"
+		            android:background="#FFFFFF">
+		            </LinearLayout>
+		            <LinearLayout android:layout_width="match_parent"
+		            	android:layout_height="match_parent"
+		            	android:gravity="bottom"
+		            	android:orientation="horizontal" >
+		            	<LinearLayout android:id="@+id/extruder_in"
+		            	    android:layout_width="103px"
+			            	android:layout_height="1dp"
+				            android:layout_marginLeft="30px"
+				            android:layout_marginBottom="60px"
+			            	android:background="#D2D2D2">
+		            	</LinearLayout>
+			            <LinearLayout android:id="@+id/extruder_out"
+			                android:layout_width="103px"
+				            android:layout_height="1dp"
+				            android:layout_marginRight="30px"
+				            android:layout_marginBottom="60px"
+				            android:background="#CF9CE6">
+		            	</LinearLayout>
+		        	</LinearLayout>
+		        	<ImageView android:layout_width="272px"
+		            android:layout_height="300px"
+		            android:scaleType="fitXY"
+		            android:src="@drawable/mwpb"></ImageView>
+		        </FrameLayout>
+		    </LinearLayout>
+		    <LinearLayout
+		    android:layout_width="0dp"
+		    android:layout_height="match_parent"
+		    android:layout_weight="20"
+		    android:orientation="vertical"
+		    android:gravity="center_horizontal">
+		        <TextView 
+			        android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_marginBottom="15dp"
+				    android:textSize="30sp"
+				    android:text="牵引机(MV)"/>
+		        <FrameLayout android:layout_width="272px"
+		            android:layout_height="300px">
+		        	<LinearLayout android:layout_width="match_parent"
+		            android:layout_height="match_parent"
+		            android:layout_margin="30px"
+		            android:background="#FFFFFF">
+		            </LinearLayout>
+		            <LinearLayout android:layout_width="match_parent"
+		            	android:layout_height="match_parent"
+		            	android:gravity="bottom"
+		            	android:orientation="horizontal" >
+		            	<LinearLayout android:id="@+id/drager_in"
+		            	    android:layout_width="103px"
+			            	android:layout_height="1dp"
+				            android:layout_marginLeft="30px"
+				            android:layout_marginBottom="60px"
+			            	android:background="#D2D2D2">
+		            	</LinearLayout>
+			            <LinearLayout android:id="@+id/drager_out"
+			                android:layout_width="103px"
+				            android:layout_height="1dp"
+				            android:layout_marginRight="30px"
+				            android:layout_marginBottom="60px"
+				            android:background="#CF9CE6">
+		            	</LinearLayout>
+		        	</LinearLayout>
+		        	<ImageView android:layout_width="272px"
+		            android:layout_height="300px"
+		            android:scaleType="fitXY"
+		            android:src="@drawable/mwpb"></ImageView>
+		        </FrameLayout>
+		    </LinearLayout>
+		</LinearLayout>
+		
+	</LinearLayout>
+</LinearLayout>

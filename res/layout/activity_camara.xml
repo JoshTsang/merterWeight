@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login" 
+    android:orientation="vertical"
+    android:background="@drawable/bg">
+	<include layout="@layout/action_bar"/>
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="2px"
+	    android:background="#000000">
+	</LinearLayout>
+    <!-- <com.walthmac.lib.CamaraView
+        android:id="@+id/camara"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+    	android:orientation="vertical">
+    </com.walthmac.lib.CamaraView> -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="80"
+    	android:orientation="horizontal">
+    	<LinearLayout android:id="@+id/camara"
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_weight="8"
+	        android:gravity="center"
+	    	android:orientation="horizontal">
+    	    
+    	</LinearLayout>
+    	<LinearLayout
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_weight="2"
+	        android:gravity="center_vertical"
+	    	android:orientation="vertical">
+    	    <LinearLayout 
+    	        android:layout_width="match_parent"
+	        	android:layout_height="wrap_content"
+	        	android:gravity="center_horizontal">
+    	        <Button android:id="@+id/ctrl_up"
+    	        android:layout_width="100dp"
+	        	android:layout_height="80dp"
+	        	android:text="上"/>
+    	    </LinearLayout>
+    	    <LinearLayout 
+    	        android:layout_width="match_parent"
+	        	android:layout_height="wrap_content"
+	        	android:gravity="center_horizontal">
+    	        <Button android:id="@+id/ctrl_left"
+    	        android:layout_width="100dp"
+	        	android:layout_height="80dp"
+	        	android:layout_marginRight="10dp"
+	        	android:text="左"/>
+    	        <Button android:id="@+id/ctrl_right"
+    	        android:layout_width="100dp"
+	        	android:layout_height="80dp"
+	        	android:text="右"/>
+    	    </LinearLayout>
+    	    <LinearLayout 
+    	        android:layout_width="match_parent"
+	        	android:layout_height="wrap_content"
+	        	android:gravity="center_horizontal">
+    	        <Button android:id="@+id/ctrl_down"
+    	        android:layout_width="100dp"
+	        	android:layout_height="80dp"
+	        	android:text="下"/>
+    	    </LinearLayout>
+    	</LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
